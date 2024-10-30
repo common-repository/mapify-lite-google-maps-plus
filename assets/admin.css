@@ -1,0 +1,25 @@
+.custom-mapping-shell .cl { display: block; float: none; height: 0px; font-size: 0px; line-height: 0px; text-indent: -4000px; clear: both; }
+
+.custom-mapping-shell form table td,
+.custom-mapping-shell form table th { text-align: left; vertical-align: top; }
+
+.custom-mapping-shell form table .mpfy-label { width: 220px; }
+.custom-mapping-shell form table .mpfy-field {  }
+
+.custom-mapping-shell form table .mpfy-field input { width: 200px; }
+.custom-mapping-loading { display: inline-block; width: 32px; height: 32px; background: url(images/ajax-loader.gif) no-repeat 0 0; }
+
+.mpfy-progressbar { position: relative; height: 20px; border: 1px solid #23282d; border-radius: 3px; }
+.mpfy-progressbar .mpfy-progressbar-progress {
+	display: block;
+	height: 20px;
+	width: 0%;
+	transition: width 0.4s;
+
+	background: #23282d; /* Old browsers */
+	background: -moz-linear-gradient(top,  #565656 0%, #23282d 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #565656 0%,#23282d 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #565656 0%,#23282d 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#565656', endColorstr='#23282d',GradientType=0 ); /* IE6-9 */
+}
+.mpfy-progressbar .mpfy-progressbar-label { position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; color: #FFFFFF; text-shadow: 1px 1px #000000; font-size: 14px; line-height: 20px; text-indent: 5px; }

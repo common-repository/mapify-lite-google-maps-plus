@@ -1,0 +1,103 @@
+.cl { display: block; height: 0; font-size: 0; line-height: 0; text-indent: -4000px; clear: both; }
+.mpfy-notext { font-size: 0px; line-height: 0px; height: 0px; text-indent: -4000px; }
+.mpfy-hidden { display: none; }
+.mpfy-empty-google-control { width: 1px; height: 26px; }
+
+.mpfy-fullwrap { position: relative; margin-bottom: 8px; }
+.mpfy-fullwrap img { max-width: none; }
+.mpfy-fullwrap * { font-family: 'Montserrat', sans-serif; }
+
+.mpfy-map { position: relative; overflow: hidden; }
+.mpfy-zoom-in { display: block; width: 34px; height: 34px; font-size: 0px; line-height: 0px; text-indent: -4000px; background: url(images/zoom-in.png) no-repeat 0 0; z-index: 11; margin: 10px 0 0 10px; position: relative; }
+.mpfy-zoom-out { display: block; width: 34px; height: 34px; font-size: 0px; line-height: 0px; text-indent: -4000px; background: url(images/zoom-out.png) no-repeat 0 0; z-index: 11; margin: 10px 0 0 10px; position: relative; }
+
+.mpfy-tooltip { width: 320px; position: absolute; top: 0; left: 0; z-index: 99999; display:none; opacity: 0; font-size: 14px; }
+.mpfy-tooltip * { font-family: 'Montserrat', sans-serif; }
+.mpfy-tooltip .inner-wrap { position: relative; left: 0px; top: 0px; }
+.mpfy-tooltip p { font-size: 15px; line-height: 24px; color: #FFFFFF; padding-bottom: 0; margin-bottom: 0; }
+.mpfy-tooltip .top { }
+.mpfy-tooltip .center { padding: 30px; background: rgba(0, 0, 0, 0.5); }
+.mpfy-tooltip .bottom { margin: 0 auto; width: 0px; border-left: 15px solid transparent; border-right: 15px solid transparent; border-top: 20px solid rgba(0, 0, 0, 0.7); }
+.mpfy-tooltip .mpfy-close-tooltip {
+	display: block;
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	width: 20px;
+	height: 21px;
+	background: url(images/close-tooltip.png) no-repeat 0 0;
+}
+
+.mpfy-tooltip.mpfy-flip-tooltip { margin-top: -11px; }
+.mpfy-tooltip.mpfy-flip-tooltip .top { display: none; }
+.mpfy-tooltip.mpfy-flip-tooltip .center { padding: 20px 40px 20px 20px; background: #1e1e1e !important; }
+.mpfy-tooltip.mpfy-flip-tooltip .center p { margin-bottom: 10px; }
+.mpfy-tooltip.mpfy-flip-tooltip .bottom { display: none; }
+.mpfy-tooltip.mpfy-flip-tooltip .center .mpfy-closest-pin { color: #FFFFFF; padding: 10px 15px; border-radius: 4px; background: #323232; text-decoration: none; font-size: 16px; white-space: nowrap; }
+.mpfy-tooltip.mpfy-flip-tooltip .center .mpfy-closest-pin:hover { background: #3A3A3A; }
+.mpfy-tooltip.mpfy-flip-tooltip .center .mpfy-or-text { line-height: 39px; margin-bottom: 0; }
+.mpfy-tooltip.mpfy-flip-tooltip .mpfy-close-tooltip { top: 20px; right: 10px; background: url(images/close.png) no-repeat center center; }
+
+.mpfy-tooltip .mpfy-directions-button { display: inline-block; width: auto; margin: 15px 0px -5px 0px; padding: 5px 25px 5px 10px; height: 17px; line-height: 17px; border: 1px solid rgba(255, 255, 255, 0.5); text-decoration: none; font-weight: bold; background: url(images/directions-btn.png) no-repeat right center; color: #FFFFFF !important; -webkit-box-sizing: content-box; box-sizing: content-box; }
+
+.mpfy-controls-wrap { position: absolute; left: 0; right: 0; top: 0; }
+.mpfy-controls { position: relative; overflow: visible; min-height: 48px; z-index: 100; background: rgba(0,0,0,0.6); }
+.mpfy-no-controls-padder { /* height: 48px; */ /* The controls have been moved */  }
+
+.mpfy-hidden-tag { display: none; }
+.mpfy-hidden-search { display: none; }
+
+/* General */
+.mpfy-selecter-wrap .selecter { width: 100%; height: 48px; max-width: none; margin: 0; padding: 0; position: relative; background: #272727; }
+.mpfy-selecter-wrap .selecter .selecter-selected { display: block; position: relative; z-index: 20; overflow: hidden; padding: 15px 30px 15px 19px; border: 0; margin: 0; font-style: italic; font-size: 12px; white-space: nowrap; text-overflow: ellipsis; cursor: pointer; line-height: 18px; background: none; border-radius: 0; color: #FFFFFF; }
+.mpfy-selecter-wrap .selecter .selecter-selected:after { content: ''; position: absolute; top: 20px; right: 12px; display: block; width: 10px; height: 8px; background: url(images/select-arrow.png) no-repeat left top; border: 0; margin: 0; padding: 0; }
+.mpfy-selecter-wrap .selecter.open .selecter-selected:after { background-position: left bottom; }
+.mpfy-selecter-wrap .selecter .selecter-options { background: #272727; border-radius: 0; border: none; box-shadow: none; }
+.mpfy-selecter-wrap .selecter .selecter-options .selecter-item { background: none; border-radius: 0; border: 0; color: #FFFFFF; font-size: 12px; }
+.mpfy-selecter-wrap .selecter .selecter-options .selecter-item:hover { background: #3a3a3a; }
+
+/* Filter */
+.mpfy-controls .mpfy-filter { float: right; width: 240px; height: 48px; background: #6e6e6f; }
+.mpfy-controls .mpfy-filter .selecter,
+.mpfy-controls .mpfy-filter .selecter .selecter-options { background: #6e6e6f; }
+
+/* Search */
+.mpfy-controls .mpfy-search-form { display: inline; float: right; height: 48px; background: #272727; margin: 0; }
+.mpfy-controls .mpfy-search-form .mpfy-search-wrap { position: relative; height: 28px; padding: 10px 4px 10px 14px; -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; }
+.mpfy-controls .mpfy-search-form input { outline: 0; }
+.mpfy-controls .mpfy-search-form .mpfy_search { display: inline; float: left; width: 155px; height: 28px; background: none; border: 0; padding: 0; margin: 0 30px 0 0; color: #FFFFFF; font-size: 12px; }
+.mpfy-controls .mpfy-search-form .mpfy_search::-webkit-input-placeholder { color: #FFFFFF; font-style: italic; -webkit-transition: all 0.3s ease; transition: all 0.3s ease; }
+.mpfy-controls .mpfy-search-form .mpfy_search::-moz-placeholder { color: #FFFFFF; font-style: italic; -webkit-transition: all 0.3s ease; transition: all 0.3s ease; }
+.mpfy-controls .mpfy-search-form .mpfy_search::-moz-placeholder { color: #FFFFFF; font-style: italic; -webkit-transition: all 0.3s ease; transition: all 0.3s ease; }
+.mpfy-controls .mpfy-search-form .mpfy_search::-ms-input-placeholder { color: #FFFFFF; font-style: italic; -webkit-transition: all 0.3s ease; transition: all 0.3s ease; }
+.mpfy-controls .mpfy-search-form .mpfy_search:focus::-webkit-input-placeholder { opacity: 0; }
+.mpfy-controls .mpfy-search-form .mpfy_search:focus::-moz-placeholder { opacity: 0; }
+.mpfy-controls .mpfy-search-form .mpfy_search:focus::-moz-placeholder { opacity: 0; }
+.mpfy-controls .mpfy-search-form .mpfy_search:focus::-ms-input-placeholder { opacity: 0; }
+.mpfy-controls .mpfy-search-form .mpfy-search-field { position: relative; display: inline; float: left; margin-right: 5px; }
+.mpfy-controls .mpfy-search-form .mpfy-clear-search { display: none; position: absolute; top: 5px; right: 5px; width: 20px; height: 17px; background: url(images/ico-clear.png) no-repeat 0 0; font-size: 0px; line-height: 0px; text-indent: -4000px; text-decoration: none; }
+.mpfy-controls .mpfy-search-form .mpfy_search_button { display: inline; float: right; background: #7f8588 url(images/ico-search.png) no-repeat center center; width: 28px; height: 28px; padding: 0; margin: 0 5px; border: 0; text-indent: -4000px; }
+
+.mpfy-tags-list { padding: 10px 10px 0 10px; background: #f0f0f0; }
+.mpfy-tags-list a.mpfy-tl-item { box-sizing: border-box; position: relative; display: inline; float: left; padding-left: 35px; margin: 0 13px 10px 13px; height: 27px; line-height: 27px; color: #000000; text-decoration: none; font-size: 14px; }
+.mpfy-tags-list a.mpfy-tl-item .mpfy-tl-i-icon { position: absolute; left: 0px; top: 0px; display: block; width: 31px; height: 27px; background-image: url(images/icon-default-view.png); background-repeat: no-repeat; background-position: center center; }
+
+.mpfy-map-canvas-wrap { position: relative; }
+.mpfy-map-canvas-wrap img { opacity: 1 !important; transition: none !important; max-width: none !important; }
+
+/* Search Radius */
+.mpfy-controls .mpfy-search-radius { margin: -10px 0; float: left; width: 160px; height: 48px; }
+.mpfy-controls .mpfy-search-radius-label { display: inline; float: left; line-height: 48px; color: #FFFFFF; font-size: 12px; }
+.mpfy-controls .mpfy-search-radius .mpfy-selecter-wrap { display: inline; float: left; width: 95px; }
+.mpfy-controls .mpfy-search-radius .selecter .selecter-selected { padding-left: 5px; font-style: normal; }
+
+.mpfy-controls-mobile .mpfy-search-radius { width: 110px; }
+.mpfy-controls-mobile .mpfy-search-radius-label { display: none; }
+
+/* Mobile Layout */
+.mpfy-controls-mobile {  }
+.mpfy-controls-mobile .mpfy-filter { float: none; width: auto; }
+
+.mpfy-controls-mobile .mpfy-search-form { float: none; display: block; }
+.mpfy-controls-mobile .mpfy-search-form .mpfy-search-wrap { width: auto; }
+.mpfy-controls-mobile .mpfy-search-wrap .mpfy_search { width: 80%; margin-right: 20px; }
